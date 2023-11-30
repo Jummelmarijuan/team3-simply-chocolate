@@ -11,6 +11,54 @@
     --lightgray: #FAFAFA;
 }
 
+.subscribe-grp {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.subscribe-title {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;/* 116.667% */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.subscribe-content {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;/* 128.571% */
+    letter-spacing: -0.28px;
+}
+
+.subscribe-button {
+    display: flex;
+    padding: 14px 40px;
+    align-items: flex-start;
+    gap: 14px;
+    border-radius: 100px;
+    background: var(--orangepeel);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe {
+    background: url(../images/choco-footer-image.jpg);
+    background-size: cover;
+}
+
 .container {
     // mobile
     margin: 0 auto;
@@ -24,8 +72,4 @@
         width: 1200px;
         margin: 0 auto;
     }
-}
-
-h1 {
-    color: var(--orangepeel);
 }
