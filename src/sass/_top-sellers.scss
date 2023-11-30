@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;;
 }
 
 :root {
@@ -24,4 +25,45 @@
         width: 1200px;
         margin: 0 auto;
     }
+}
+
+.ts-h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16;
+}
+.orange {
+    color: var(--orangepeel);
+}
+.ts-block {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 32px;
+}
+
+.ts-image {
+    border-radius: 15px;
+}
+
+.ts-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ts-text {
+    font-size: 14px;
+}
+
+.ts-btn {
+    border-radius: 100px;
+    background: var(--orangepeel);
+    border: none;
+}
+.ts-btn p {
+    padding: 14px 40px;
+    font-size: 18px;
+    color: var(--lightgray);
 }
