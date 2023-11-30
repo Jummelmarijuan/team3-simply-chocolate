@@ -26,7 +26,189 @@
     }
 }
 
-.review-caption {
+.body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    /*mobile*/
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        margin: 0 auto;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+}
+
+.reviews-caption {
     text-align: center;
-    text-transform: capitalize;
-  }
+    text-transform: uppercase;
+    font-family: "Montserrat";
+}
+
+.reviews-choco {
+    color: var(--orangepeel);
+}
+
+.list {
+    padding-top: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.reviews-section {
+    padding-top: 15px;
+}
+
+.reviews-section ul li {
+    text-align: center;
+
+}
+
+.cx-img {
+    position: absolute;
+    margin-left: 140px;
+    height: 80px;
+    width: 80px;
+
+}
+
+.feedback {
+    width: 360px;
+    flex-shrink: 0;
+    ;
+
+}
+
+.cx-caption-reviews {
+    margin-top: 50px;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FFF;
+    box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
+    height: 200px;
+}
+
+.cx-name {
+    padding-top: 56px;
+    color: var(--charcoal);
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+
+}
+
+.cx-reviews {
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: rgba(17, 17, 17, 0.70);
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+
+.dotslides {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 32px;
+    gap: 13px;
+}
+
+.dotslides .active {
+    background-color: var(--orangepeel);
+    width: 28px;
+    height: 13px;
+    margin: 0 2px;
+    border-radius: 40%;
+    display: inline-block;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.review-btn {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 1px solid var(--orangepeel);
+    width: 222px;
+    height: 50px;
+    padding: 14px 40px;
+    background-color: #FFF;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/*Size styling*/
+
+@media (max-width:1199px) {
+    .reviews-cx3 {
+        display: none;
+    }
+
+    .list {
+        margin: auto;
+    }
+
+    .dotslides {
+        margin-top: 20px;
+    }
+
+    .review-btn {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:767px) {
+    .reviews-cx3 {
+        display: none;
+    }
+
+    .reviews-cx2 {
+        display: none;
+    }
+
+    .dotslides {
+        margin-top: 20px;
+    }
+
+    .review-btn {
+        margin-top: 50px;
+    }
+
+}
+ 
