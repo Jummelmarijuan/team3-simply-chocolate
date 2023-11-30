@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --charcoal: #111;
+    --blackcurrant: #1E1823;
+    --orangepeel: #FD9222;
+    --lightgray: #FAFAFA;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.modal-content {
+    width: 609px;
+    height: 1058px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: var(--lightgray);
+    position: relative;
+    padding: 48px;
+}
+
+.leave-a-review-modal {
+    width: 517px;
+    height: auto;
+    margin: auto;
+    border-radius: 15px;
+    background-color: var(--lightgray);
+    position: relative;
+    padding: 48px;
+}
+
+.buy-now-close-btn {
+    background-color: transparent;
+    position: absolute;
+    left: 91%;
+    top: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-now-close-btn:hover {
+    fill: var(--orangepeel);
+}
+
+.buy-now-title {
+    text-align: center;
+    color: #FD9222;
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    margin-bottom: 32px;
+}
+
+.text-now {
+    color: #111;
+}
+
+.order-selection {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.order-list {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    border-radius: 15px;
+    flex-basis: calc((100% - 32px) / 3);
+    flex-direction: column;
+    padding: 24px 20px;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 5.44px 5.44px #00000008;
+}
+
+.order-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.select-btn{
+    display: block;
+    padding: 6px 16px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    border-radius: 100px;
+    background: var(--lightgray);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #111;
+    cursor: pointer;
+}
+
+.buy-now-radio:checked+.select-btn {
+    background: #FCF1E0;
+    border-color: var(--orangepeel);
+}
+
+// Personal Info
+
+.personal-info-wrapper {
+    display: flex;
+    margin-top: 8px;
+    flex-direction: row;
+    gap: 21px;
+    // width: 100%;
+    // height: auto;
+    align-self: stretch;
+}
+
+// Leave a review wrapper
+.leave-a-review-wrapper {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+    gap: 21px;
+    // width: 100%;
+    // height: auto;
+    align-self: stretch;
+}
+
+// end of Leave a review wrapper
+
+input::placeholder {
+    color: rgba(64, 64, 64, 0.30);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+
+.input-name {
+    padding: 22px 24px;
+    border-radius: 13px;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 18px;
+    margin-top: 8px;
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+    outline: 0;
+}
+
+.input-name:hover, 
+.input-name:focus {
+    border-color: var(--orangepeel);
+}
+
+.block-span {
+    display: block;
+    position: relative;
+    // margin-bottom: 18px;
+}
+
+.tel-no {
+    padding-left: 138px;
+}
+
+.icon-flag {
+    position: absolute;
+    top: 53%;
+    left: 24px;
+    transform: translateY(-50%);
+}
+
+.area-code {
+    position: absolute;
+    top: 44%;
+    left: 70px;
+    font-size: 18px;
+}
+
+.area-code::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    width: 1px;
+    height: 32px;
+    background-color: #4040404d;
+}
+
+.icon-mastercard {
+    position: absolute;
+    top: 54%;
+    left: 90%;
+    transform: translateY(-50%);
+}
+
+.usermessage{
+    display: block;
+    width: 100%;
+    height: 137px;
+    padding: 22px 24px;
+    margin-top: 8px;
+    border-radius: 13px;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: rgba(64, 64, 64, 0.30);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+}
+
+button {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.order-btn {
+    display: block;
+    background: var(--orangepeel);
+    margin-right: auto;
+    border: none;
+    border-radius: 100px;
+    padding: 14px 40px;
+    cursor: pointer;
+    transition: color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1), transform .25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.order-btn:hover,
+.order-btn:active {
+    color: var(--orangepeel);
+    background-color: #FCF1E0;
+    transform: scale(1.1);
+}
