@@ -52,11 +52,95 @@
     background: var(--orangepeel);
     margin-left: auto;
     margin-right: auto;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .subscribe {
     background: url(../images/choco-footer-image.jpg);
     background-size: cover;
+}
+
+.footer {
+    background-color: var(--blackcurrant);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 32px;
+    gap: 62px;
+}
+
+.footer-header {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;/* 121.429% */
+    letter-spacing: -0.56px;
+}
+
+.footer-header>span {
+    color: var(--orangepeel);
+}
+
+.footer-contacts {
+    display: flex;
+    gap: 63px;
+}
+
+.footer-contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: left;
+    color: #FFF;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;/* 128.571% */
+}
+
+.footer-icons {
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 18px;
+}
+
+.footer-top {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.footer-bottom {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;/* 114.286% */
+    letter-spacing: -0.28px;
+    padding-top: 24px;
+}
+.footer-anchor-links {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.footer-icons,
+.footer-contact-list,
+.footer-anchor-links,
+.footer-bottom {
+    list-style-type: none;
+    text-decoration: none;
 }
 
 .container {
