@@ -52,6 +52,15 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 19px;
+
+    @media screen and (min-width: 768px) {
+        gap: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 19px;
+        flex-wrap: nowrap;
+    }
 }
 
 .uc-cards-img {
