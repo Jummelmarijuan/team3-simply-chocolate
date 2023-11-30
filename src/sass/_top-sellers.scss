@@ -27,13 +27,6 @@
     }
 }
 
-.top-sellers {
-    @media screen and (max-width: 767px) {
-            display: flex;
-            justify-content: center;
-        }
-}
-
 .ts-h2 {
     text-align: center;
     font-size: 24px;
@@ -47,9 +40,17 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 32px;
+    justify-content: center;
+    gap: 20px;
+
+    @media screen and (max-width: 767px) {
+            padding-left: 20px;
+            padding-right: 20px;
+    
+        }
 }
 
 .ts-image {
@@ -59,6 +60,18 @@
 .ts-bottom {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+        
+    @media screen and (min-width: 1200px) {
+               width: 1136px;
+               margin-left: 26px;
+        }
+    
+    @media screen and (max-width: 767px) {
+            justify-content: center;
+        
+        }
+
 }
 
 .ts-text {
@@ -72,11 +85,13 @@
     border-radius: 100px;
     background: var(--orangepeel);
     border: none;
-        @media screen and (max-width: 767px) {
-            align-self: right;
+        @media screen and (min-width: 768px) {
+                align-self: right;
+                padding-right: 20px;
             }
 }
-.ts-btn p {
+
+.ts-btn p{
     padding: 14px 40px;
     font-size: 18px;
     color: var(--lightgray);
