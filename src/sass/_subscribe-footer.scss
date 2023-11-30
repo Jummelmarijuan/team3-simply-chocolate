@@ -61,7 +61,7 @@
 }
 
 .subscribe {
-    background: url(../images/choco-footer-image.jpg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/Subcribe-img.jpg), lightgray 0px -481.157px / 100% 375.122% no-repeat;
     background-size: cover;
 }
 
@@ -111,6 +111,10 @@
     width: auto;
     height: auto;
     gap: 18px;
+}
+
+.icons {
+    fill: #FAFAFA;
 }
 
 .footer-top {
