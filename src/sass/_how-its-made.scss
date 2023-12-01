@@ -6,6 +6,7 @@
 
 .orange-text {
     text-align: center;
+    margin-bottom: 50px;
 }
 .orange {
     color: #FD9222;
@@ -22,7 +23,18 @@ line-height: 24px; /* 133.333% */
 
 ul {
     list-style-type: disc;
+}
 
+.box-choco {
+    background-color: #FAFAFA;
+    display: flex;
+    width: 452px;
+    height: 336px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    flex-shrink: 0;
+    border-radius: 15px;
 }
 :root {
     --charcoal: #111;
