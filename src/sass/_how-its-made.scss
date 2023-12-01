@@ -37,11 +37,14 @@ ul {
     border-radius: 15px;
 }
 
-.box-choco-item {
-    position: absolute;
-    width: 150px;
-    height: 50px;
+.boxchoco-item {
+    justify-content: center;
+    display: flex;
+    right: 100%;
+  
+  
 }
+
 :root {
     --charcoal: #111;
     --blackcurrant: #1E1823;
