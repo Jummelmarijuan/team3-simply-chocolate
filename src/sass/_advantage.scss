@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    // mobile
+    /* // mobile */
     margin: 0 auto;
 
     @media screen and (min-width: 768px) {
@@ -27,6 +27,12 @@ body {
     @media screen and (min-width: 1200px) {
         width: 1200px;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .adv-sec-list-with-line:after {
+        display: none;
     }
 }
 
