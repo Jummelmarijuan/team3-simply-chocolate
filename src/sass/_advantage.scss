@@ -16,9 +16,8 @@ body {
 }
 
 .container {
-    /* mobile */
+    // mobile
     margin: 0 auto;
-
 
     @media screen and (min-width: 768px) {
         width: 768px;
@@ -45,7 +44,6 @@ body {
 
 .advantage-sec-list {
     display: flex;
-    height: 244px;
     justify-content: center;
     align-items: flex-start;
     gap: 70px;
@@ -87,7 +85,7 @@ body {
     flex-shrink: 0;
 }
 
-.adv-sec-list-with-line:hover {
+.adv-sec-list-with-line {
     position: relative;
 }
 
