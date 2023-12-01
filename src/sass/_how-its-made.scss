@@ -4,6 +4,26 @@
     box-sizing: border-box;
 }
 
+.orange-text {
+    text-align: center;
+}
+.orange {
+    color: #FD9222;
+}
+
+.chocolate {
+    color: #111;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 133.333% */
+}
+
+ul {
+    list-style-type: disc;
+
+}
 :root {
     --charcoal: #111;
     --blackcurrant: #1E1823;
