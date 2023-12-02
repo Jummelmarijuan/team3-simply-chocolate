@@ -1,27 +1,96 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --charcoal: #111;
-    --blackcurrant: #1E1823;
-    --orangepeel: #FD9222;
-    --lightgray: #FAFAFA;
+  --charcoal: #111;
+  --blackcurrant: #1e1823;
+  --orangepeel: #fd9222;
+  --lightgray: #fafafa;
 }
 
 .container {
-    // mobile
+  // mobile
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
     margin: 0 auto;
+  }
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        margin: 0 auto;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
 
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-        margin: 0 auto;
-    }
+.body-wrap {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 14px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: var(--charcoal);
+}
+.header-list-nav {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+  display: flex;
+  gap: 24px;
+  margin-right: 137px;
+}
+
+.header-link-nav {
+  transition: color var(--transition);
+}
+
+.header-link-nav:is(:hover, :focus, :active) {
+  color: var(--accent-color);
+}
+// Header
+
+.hero-container {
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../images/choco-hero.png);
+
+  background-color: var(--blackcurrant);
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding-top: 395px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
