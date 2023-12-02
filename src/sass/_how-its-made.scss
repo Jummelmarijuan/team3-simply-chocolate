@@ -38,11 +38,10 @@ ul {
 }
 
 .boxchoco-item {
-    justify-content: center;
+    justify-content: flex-end;
     display: flex;
     right: 100%;
-  
-  
+    margin-right: 80px;
 }
 
 :root {
