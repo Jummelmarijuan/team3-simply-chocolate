@@ -21,16 +21,16 @@ ul {
     list-style: none;
 }
 
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    background-color: #2e2f4266;
-    transition: opacity .25s cubic-bezier(.4, 0, .2, 1), visibility .25s cubic-bezier(.4, 0, .2, 1);
-}
+// .backdrop {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 100;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #2e2f4266;
+//     transition: opacity .25s cubic-bezier(.4, 0, .2, 1), visibility .25s cubic-bezier(.4, 0, .2, 1);
+// }
 
 .modal-content {
     width: 609px;
@@ -44,12 +44,12 @@ ul {
 
 .leave-a-review-modal {
     width: 517px;
-    height: auto;
-    margin: auto;
+    height: 628px;
+    margin: 0 auto;
     border-radius: 15px;
     background-color: var(--lightgray);
     position: relative;
-    padding: 48px;
+    padding: 40px;
 }
 
 .buy-now-close-btn {
@@ -140,14 +140,19 @@ ul {
 
 // Personal Info
 
+.container-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
 .personal-info-wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 8px;
     flex-direction: row;
     gap: 21px;
-    // width: 100%;
-    // height: auto;
-    align-self: stretch;
 }
 
 // Leave a review wrapper
@@ -162,6 +167,15 @@ ul {
 }
 
 // end of Leave a review wrapper
+
+.userpan {
+    margin-bottom: 8px;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+}
 
 input::placeholder {
     color: rgba(64, 64, 64, 0.30);
@@ -179,7 +193,6 @@ input::placeholder {
     width: 100%;
     font-size: 14px;
     margin-bottom: 18px;
-    margin-top: 8px;
     border-radius: 13px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
@@ -201,35 +214,33 @@ input::placeholder {
     padding-left: 138px;
 }
 
-.icon-flag {
-    position: absolute;
-    top: 53%;
-    left: 24px;
-    transform: translateY(-50%);
+.iti {
+    width: 100%;
+    margin-bottom: 18px;
+    margin-top: 8px;
 }
 
-.area-code {
-    position: absolute;
-    top: 44%;
-    left: 70px;
-    font-size: 18px;
+.iti__selected-flag {
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
 }
 
-.area-code::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: -5px;
-    right: -10px;
-    width: 1px;
-    height: 32px;
-    background-color: #4040404d;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 .icon-mastercard {
     position: absolute;
-    top: 54%;
-    left: 90%;
+    top: 44%;
+    left: 89%;
     transform: translateY(-50%);
 }
 
@@ -238,9 +249,18 @@ input::placeholder {
     width: 100%;
     height: 137px;
     padding: 22px 24px;
-    margin-top: 8px;
+    // margin-top: 8px;
     border-radius: 13px;
+    margin-bottom: 18px;
     resize: none;
+    outline: none;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+}
+
+textarea:hover,
+textarea:focus {
+    border-color: var(--orangepeel);
 }
 
 textarea::placeholder {
@@ -272,5 +292,65 @@ button {
 .order-btn:active {
     color: var(--orangepeel);
     background-color: #FCF1E0;
-    transform: scale(1.1);
+    opacity: 1.0;
+}
+
+// Modal Subs
+
+.modal-subs {
+    width: 538px;
+    height: 196px;
+    position: relative;
+    display: block;
+}
+
+.subs-img {
+    width: 538px;
+    height: 196px;
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.subs-close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+    top: 22px;
+    right: 5%;
+    fill: #fff;
+    cursor: pointer;
+}
+
+.explore-wrapper {
+    width: 538px;
+    height: 196px;
+    padding: 40px;
+    background: var(--lightgray);
+}
+
+.text-now-subs {
+    margin-bottom: 18px;
+    color: #111;
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.email-subs {
+    padding: 22px 24px;
+    width: 313px;
+    font-size: 14px;
+    // margin-bottom: 18px;
+    border-radius: 30px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+    outline: 0;
 }
