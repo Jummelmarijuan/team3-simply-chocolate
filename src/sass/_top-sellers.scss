@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -12,20 +12,27 @@
     --lightgray: #FAFAFA;
 }
 
-.container {
-    // mobile
-    margin: 0 auto;
+// added
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
+// added
+.section {
+    padding-bottom: 72px;
+    
     @media screen and (min-width: 768px) {
-        width: 768px;
-        margin: 0 auto;
+        padding-bottom: 100px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1200px;
-        margin: 0 auto;
+        padding-bottom: 128px;
     }
 }
+
+
 
 .ts-h2 {
     text-align: center;
@@ -33,83 +40,144 @@
     font-weight: 600;
     line-height: 1.16;
 }
+
 .orange {
     color: var(--orangepeel);
 }
+
 .ts-block {
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
-    padding-top: 50px;
-    padding-bottom: 32px;
-    justify-content: center;
-    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    column-gap: 16px; //from 20px to 16px
+    row-gap: 0;
+    padding-bottom: 0px;
+    //added
+    @media screen and (min-width: 767px) {
+        padding-bottom: 32px;
+    }
 
-    @media screen and (max-width: 767px) {
-            padding-left: 20px;
-            padding-right: 20px;
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 32px;
+    }
+}
+
+// added
+.hidden-text {
+    width: 335px;
+    display: unset;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 767px) {
+        display: none;
+        padding-bottom: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+        padding-bottom: 0px;
+    }
+}
+
+.hidden-text-mob {
+    display: none;
     
-        }
+    @media screen and (min-width: 767px) {
+        display: unset;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: unset;
+    }
 }
 
 .ts-image {
     border-radius: 15px;
+    margin-bottom: 20px;
+    // added
+    @media screen and (min-width: 767px) {
+        width: 344px;
+        margin-bottom: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        margin-bottom: 0px;
+    }
 }
 
 .ts-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
-        
-    @media screen and (min-width: 1200px) {
-               width: 1136px;
-               margin-left: 26px;
-        }
-    
-    @media screen and (max-width: 767px) {
-            justify-content: center;
-        
-        }
+     
+    @media screen and (min-width: 768px) {
+        justify-content: space-between;
+    }
 
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+        width: 1136px;
+        // margin-left: 26px; removed
+    }
 }
 
 .ts-text {
     font-size: 14px;
-    @media screen and (max-width: 767px) {
-        display: none;
-        }
+    // added
+    max-width: 306px;
+    text-align: left;
+    line-height: 18px;
+    
+    letter-spacing: -0.28px;
+
+    @media screen and (min-width: 768px) {
+        width: 306px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 407px;
+    }
 }
 
 .ts-btn {
     border-radius: 100px;
     background: var(--orangepeel);
-    border: none;
-        @media screen and (min-width: 768px) {
-                align-self: right;
-                padding-right: 20px;
-            }
+    border: 1px solid #fff; //added
+    cursor: pointer; //added
+    padding: 14px 40px; //added
+    //adding font style
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1), transform .25s cubic-bezier(.4, 0, .2, 1);
+    @media screen and (min-width: 768px) {
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+
+    }
+
+    // @media screen and (min-width: 768px) {
+    //     align-self: right;
+    //     padding-right: 20px;
+    // }
 }
 
-.ts-btn p{
-    padding: 14px 40px;
-    font-size: 18px;
-    color: var(--lightgray);
+.ts-btn:hover,
+.ts-btn:active {
+    color: var(--orangepeel);
+    background-color: #FCF1E0;
+    opacity: 1.0;
 }
 
 .hide-block {
-    @media screen and (max-width: 1199px) {
-           display: none;
-        }
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: unset;
+    }
 }
 
-.list-text {
-    font-size: 14px;
-    padding-top: 20px;
-    padding-bottom: 32px;
-    width: 306px;
-
-    @media screen and (min-width: 768px) {
-            display: none;
-        }
-}
