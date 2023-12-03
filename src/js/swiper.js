@@ -17,17 +17,17 @@ var swiper = new Swiper(".mySwiper", {
     // prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-    // when window width is >= 320px
+    // 375
     375: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20
     },
-    // when window width is >= 480px
+    // 768px
     768: {
       slidesPerView: 2.5,
       spaceBetween: 30
     },
-    // when window width is >= 640px
+    // 1200px
     1200: {
       slidesPerView: 4,
       spaceBetween: 40
