@@ -11,6 +11,10 @@
     --lightgray: #FAFAFA;
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
 .container {
     // mobile
     margin: 0 auto;
@@ -24,4 +28,82 @@
         width: 1200px;
         margin: 0 auto;
     }
+}
+.our-products-section h2 {
+        color: var(--charcoal);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: -0.72px;
+        text-transform: uppercase;
+}
+.our-products-section span {
+    color: var(--orangepeel);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: -0.72px;
+        text-transform: uppercase;
+}
+
+.products-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 18px;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+
+.products-image {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FFF;
+    padding: 32px 20px;
+    
+}
+.products-caption p {
+    color: rgba(17, 17, 17, 0.70);
+    
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        /* 116.667% */
+        letter-spacing: -0.24px;
+}
+
+.products-caption h3 {
+    color: #111;
+    
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        /* 133.333% */
+        letter-spacing: -0.36px;
+        text-transform: uppercase;
+}
+
+.our-product-btn {
+    padding: 8px 20px;
+    margin-top: 18px;
+    margin-bottom: 32px;
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: var(--lightgray);
+    cursor: pointer;
 }
