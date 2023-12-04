@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -11,23 +12,12 @@
     --lightgray: #FAFAFA;
 }
 
-.container {
-    // mobile
-    margin: 0 auto;
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        margin: 0 auto;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-        margin: 0 auto;
-    }
-}
-
-.body {
-    font-family: "Montserrat", sans-serif;
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--lightgray);
+    position: relative;
 }
 
 .container {
@@ -47,6 +37,10 @@
 
 }
 
+h2 {
+    padding-top: 20px;
+}
+
 .reviews-caption {
     text-align: center;
     text-transform: uppercase;
@@ -57,64 +51,73 @@
     color: var(--orangepeel);
 }
 
-.list {
-    padding-top: 50px;
-    list-style: none;
+.slide-container {
     display: flex;
-    justify-content: center;
     gap: 28px;
-    flex-wrap: wrap;
-}
-
-.reviews-section {
-    padding-top: 15px;
-}
-
-.reviews-section ul li {
-    text-align: center;
+    padding-top: 50px;
+    position: relative;
 
 }
 
-.cx-img {
-    position: absolute;
-    margin-left: 140px;
-    height: 80px;
-    width: 80px;
-
-}
-
-.feedback {
+.slide-content {
+    /* margin: 0 40px; */
+    height: 240px;
     width: 360px;
-    flex-shrink: 0;
-    ;
+    /* background-color: #FD9222; */
+    padding-top: 40px;
 
 }
 
-.cx-caption-reviews {
-    margin-top: 50px;
+.card {
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
     background: #FFF;
-    box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
+    box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
+    width: 360px;
     height: 200px;
 }
 
-.cx-name {
-    padding-top: 56px;
-    color: var(--charcoal);
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10px 14px; */
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.card-content {
+    gap: 24px;
+    margin-top: 35px;
+}
+
+.card-image {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    /* background-color: #FAFAFA; */
+    margin-top: -40px;
+
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.name {
+    color: #111;
     text-align: center;
     font-family: "Montserrat";
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
-
 }
 
-.cx-reviews {
-    padding-top: 24px;
-    padding-left: 24px;
-    padding-right: 24px;
+.description {
     color: rgba(17, 17, 17, 0.70);
     text-align: center;
     font-family: "Montserrat";
@@ -125,37 +128,9 @@
     letter-spacing: -0.28px;
 }
 
-.dotslides {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 32px;
-    gap: 13px;
-}
-
-.dotslides .active {
-    background-color: var(--orangepeel);
-    width: 28px;
-    height: 13px;
-    margin: 0 2px;
-    border-radius: 40%;
-    display: inline-block;
-}
-
-.dot {
-    cursor: pointer;
-    height: 13px;
-    width: 13px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-
-}
-
 .review-btn {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 82px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,42 +148,36 @@
     line-height: normal;
 }
 
-/*Size styling*/
-
-@media (max-width:1199px) {
-    .reviews-cx3 {
-        display: none;
-    }
-
-    .list {
-        margin: auto;
-    }
-
-    .dotslides {
-        margin-top: 20px;
-    }
-
-    .review-btn {
-        margin-top: 50px;
-    }
-}
-
-@media (max-width:767px) {
-    .reviews-cx3 {
-        display: none;
-    }
-
-    .reviews-cx2 {
-        display: none;
-    }
-
-    .dotslides {
-        margin-top: 20px;
-    }
-
-    .review-btn {
-        margin-top: 50px;
-    }
+.dotslides {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 32px;
+    gap: 13px;
 
 }
- 
+
+.active,
+.dot:hover {
+    background-color: var(--orangepeel);
+    width: 28px;
+    height: 13px;
+    margin: 0 2px;
+    border-radius: 40%;
+    display: inline-block;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+
+
