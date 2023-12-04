@@ -16,54 +16,56 @@ body {
 }
 
 .container {
-    /* // mobile */
+    width: 335px;
     margin: 0 auto;
 
     @media screen and (min-width: 768px) {
-        width: 768px;
+        width: 704px;
         margin: 0 auto;
-
-        .advantage-sec-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-        }
-        
-        .adv-sec-list-with-line {
-            width: 48%;
-        }
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        width: 1136px;
         margin: 0 auto;
     }
-}
-
-@media screen and (max-width: 1199px) {
-    .adv-sec-list-with-line:after {
-        display: none;
-    }
-}
-
-.hidden-header {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
 }
 
 .advantage-section {
     background-color: var(--charcoal);
-    background-size: cover;
-    padding: 50px;
+    padding: 20px;
+    width: 100%;
+   
+    @media screen and (min-width: 768px) {
+        padding: 50px 32px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        padding: 50px;
+    }
+    
+}
+
+.visually-hidden {
+    display: none;
 }
 
 .advantage-sec-list {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    // flex-direction: column;
     gap: 70px;
     flex-wrap: wrap;
+
+    @media screen and (min-width:768px) {
+        justify-content: unset;
+    }
+
+    @media screen and (min-width:1200px) {
+        justify-content: center;
+    }
+
+
 }
 
 .advantage-sec-list {
@@ -101,19 +103,30 @@ body {
     flex-shrink: 0;
 }
 
-.adv-sec-list-with-line {
+.adv-sec-list-item {
     position: relative;
-    height: 242px;
+    height: 244px;
+    margin-right: 28px;
+    row-gap: 32px;
+    // display: none;
+
 }
 
-.adv-sec-list-with-line::after {
-    content: '';
-    position: absolute;
-    top: 55%;
-    right: -18px;
-    transform: translateY(-55%);
-    height: 124px;
-    background-color: #FFFFFF80;
-    width: 1px;
-    transition: height 0.3s;
+.adv-sec-list-item:not(:last-child)::after {
+    display: none;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+
+    @media screen and (min-width:1200px) {
+        content: '';
+        display: inline-block;
+            position: absolute;
+            top: 60px;
+            right: -18px;
+            height: 124px;
+            background-color: rgba(255, 255, 255, 0.50);
+            width: 1px;
+    }
 }
