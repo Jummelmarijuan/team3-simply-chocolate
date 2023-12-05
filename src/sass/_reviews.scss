@@ -13,12 +13,12 @@
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--lightgray);
-    position: relative;
-   
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // background: var(--lightgray);
+    // position: relative;
+   font-family: "Montserrat",sans-serif;
 }
 
 .container {
@@ -134,22 +134,32 @@ h2 {
 }
 .review-btn {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     border-radius: 100px;
     border: 1px solid var(--orangepeel);
-    width: 222px;
-    height: 50px;
-    padding: 14px 40px;
+    padding: 12px 28px;
     background-color: #FFF;
-    font-family: "Montserrat";
-    font-size: 18px;
-    font-style: normal;
+    font-size: 14px;
     font-weight: 600;
     line-height: normal;
+
+        @media screen and (min-width: 768px) {
+            padding: 14px 40px;
+            font-size: 18px;
+            margin-top: 50px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 14px 40px;
+            font-size: 18px;
+            margin-top: 50px;
+        }
+
+
 }
 .review-btn:hover, .review-btn:focus {
     background-color: var(--orangepeel);
