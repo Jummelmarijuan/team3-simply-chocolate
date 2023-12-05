@@ -7,11 +7,12 @@
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    // background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 18px;
+    
 
     @media screen and (min-width: 768px) {
 
@@ -30,7 +31,9 @@
 }
 
 .swiper-pagination-bullet {
-    background: rgba(17, 17, 17, 0.10);
+    color: rgba(17, 17, 17, 0.10);
+    width: 13px;
+    height: 13px;
 }
 
 .swiper-pagination-bullet-active {
@@ -38,6 +41,22 @@
     width: 28px;
     height: 13px;
     border-radius: 13px;
+}
+
+.swiper-pagination-bullet-active-next {
+    display: none;
+}
+
+.swiper-pagination-bullet-active-next-next {
+    display: none;
+}
+
+.swiper-pagination-bullet-active-prev {
+    display: none;
+}
+
+.swiper-pagination-bullet-active-prev-prev {
+    display: none;
 }
 
 .swiper-wrapper {
@@ -64,6 +83,7 @@ h2 {
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(17, 17, 17, 0.10);
+    background-color: #FFF;
     margin-top: 32px;
     padding: 32px 20px 131px 20px;
     align-items: center;

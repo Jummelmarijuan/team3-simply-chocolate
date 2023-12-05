@@ -5,12 +5,12 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
     autoplay:
     {
-    delay: 1500,
+    delay: 1600,
     disableOnInteraction: false,
     },
     pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+      clickable: true,
     },
     navigation: {
     // nextEl: ".swiper-button-next",
