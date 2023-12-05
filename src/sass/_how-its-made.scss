@@ -4,22 +4,65 @@
     box-sizing: border-box;
 }
 
-.how-its-made {
-    background-color: #FD9222;
+.img-txt {
+    display: flex;
+    column-gap: 52px;
+    align-items: center;
+}
+
+.container {
+    display: flex; /* Add this line to make justify-content work */
+    justify-content: center;
+}
+
+.orange-text h1 {
+    /* Add styles for the orange text */
 }
 
 .orange {
     color: #FD9222;
-    
 }
+
+.preparation li {
+    padding-bottom: 24px;
+    margin-left: 20px;
+}
+
+.how-its-made {
+    background-color: var(--lightgray);
+} 
+
+.chocolate {
+    color: #111;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 133.333% */
+}
+
+.box-choco {
+    background-color: white;
+    display: flex;
+    width: 452px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+
+.boxchoco-item {
+    display: flex;
+    /* Remove right: 100%; and margin-right: 80px; */
+}
+
 :root {
     --charcoal: #111;
     --blackcurrant: #1E1823;
     --orangepeel: #FD9222;
     --lightgray: #FAFAFA;
 }
-
-
 .container {
     width: 335px;
     margin: 0 auto;
