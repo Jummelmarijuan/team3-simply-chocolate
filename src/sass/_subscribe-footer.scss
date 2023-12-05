@@ -123,8 +123,7 @@ body {
 }
 
 .footer-top {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10); 
 }
 
 .footer-social-icons {
@@ -175,7 +174,7 @@ body {
 
 .subscribe-button:hover {
     color: var(--orangepeel);
-    background-color: var(--lightgray);
+    background-color: #FCF1E0;
 }
 
 .container {
@@ -234,6 +233,11 @@ body {
     .subscribe-grp {
         padding-top: 62px;
         padding-bottom: 63px;
+    }
+
+    .subscribe-button {
+        font-size: 14px;
+        padding: 12px 28px;
     }
 
     .footer-top {
