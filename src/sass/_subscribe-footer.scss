@@ -11,17 +11,279 @@
     --lightgray: #FAFAFA;
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.subscribe-grp {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+
+.subscribe-title {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 116.667% */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.subscribe-content {
+    width: 467px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: -0.28px;
+}
+
+.subscribe-button {
+    display: flex;
+    padding: 14px 40px;
+    align-items: flex-start;
+    gap: 14px;
+    border-radius: 100px;
+    background: var(--orangepeel);
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+}
+
+.subscribe {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/Subcribe-img.jpg), lightgray 0px -481.157px / 100% 375.122% no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    background-color: var(--blackcurrant);
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.footer-header {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    /* 121.429% */
+    letter-spacing: -0.56px;
+}
+
+.footer-header>span {
+    color: var(--orangepeel);
+}
+
+.footer-contacts,
+.footer-top,
+.footer-contacts,
+.footer-contact-links,
+.footer-contact-list,
+.footer-anchor-links,
+.footer,
+.footer-icons {
+    display: flex;
+}
+
+.footer-contact-links {
+    color: #FFF;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    /* 128.571% */
+    gap: 14px;
+}
+
+.footer-contact-list {
+    gap: 4px;
+}
+
+.footer-icons {
+    width: auto;
+    height: auto;
+    gap: 18px;
+}
+
+.footer-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.footer-social-icons {
+    fill: #FAFAFA;
+}
+
+.footer-bottom {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    /* 114.286% */
+    letter-spacing: -0.28px;
+    padding-top: 24px;
+    padding-bottom: 50px;
+}
+
+.footer-contact-links,
+.footer-contact-list {
+    flex-direction: column;
+}
+
+.footer-contact-list,
+.footer-icons,
+.footer-anchor-links {
+    list-style-type: none;
+}
+
+.footer-anchor-links {
+    gap: 24px;
+}
+
+.footer-contact-list>li>a,
+.footer-anchor-links>li>a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer-social-icons:hover {
+    fill: var(--orangepeel);
+}
+
+.footer-anchor-links>li>a:hover,
+.footer-contact-list>li>a:hover {
+    color: var(--orangepeel);
+}
+
+.subscribe-button:hover {
+    color: var(--orangepeel);
+    background-color: #FCF1E0;
+}
+
 .container {
     // mobile
     margin: 0 auto;
+}
 
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .container {
         width: 768px;
+    }
+
+    .footer-top {
+        align-items: self-start;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-bottom: 62px;
+    }
+
+    .footer-contacts {
+        gap: 50px
+    }
+
+    .subscribe {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/Subcribe.jpg), lightgray 0px -481.157px / 100% 375.122% no-repeat;
+        background-size: cover;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .container {
+        width: 1200px;
+    }
+
+    .footer-top {
+        align-items: self-start;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-bottom: 62px;
+    }
+
+    .footer-contacts {
+        gap: 63px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    .container {
+        width: auto;
+        height: auto;
         margin: 0 auto;
     }
 
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-        margin: 0 auto;
+    .subscribe-grp {
+        padding-top: 62px;
+        padding-bottom: 63px;
+    }
+
+    .subscribe-button {
+        font-size: 14px;
+        padding: 12px 28px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        gap: 32px;
+    }
+
+    .footer-contacts {
+        justify-content: space-between;
+    }
+
+    .footer-anchor-links {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .subscribe,
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .subscribe-content {
+        width: 326px;
+    }
+
+    .footer-bottom {
+        padding-bottom: 32px;
+    }
+
+    .footer-icons {
+        gap: 14px;
+    }
+
+    .subscribe {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/Subcribe-mini.jpg), lightgray 0px -481.157px / 100% 375.122% no-repeat;
+        background-size: cover;
     }
 }
