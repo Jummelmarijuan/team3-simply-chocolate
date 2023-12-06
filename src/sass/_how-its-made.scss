@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-txt {
+    display: flex;
+    column-gap: 52px;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    /* Add this line to make justify-content work */
+    justify-content: center;
+    margin: auto;
+    height: auto;
+}
+
+.howitsmade-grp {
+    padding-bottom: 128px;
+
+}
+
+.media-grp {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.vidplayer {
+    width: 600px;
+    height: 400px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+        width: 335px;
+        height: 500px; 
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 614px;
+        height: 400px;
+    }
+
+}
+
+.iframe {
+    border-radius: 15px;
+    z-index: -1
+}
+
+.orange-text>h1 {
+    color: #111;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;/* 116.667% */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+
+}
+
+.orange-text {
+    padding-bottom: 50px;
+}
+
+.orange {
+    color: #FD9222;
+}
+
+.preparation {
+    list-style: initial; 
+    color: #111;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+        /* 128.571% */
+    letter-spacing: -0.28px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+          gap: 24px;
+    }
+
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+        gap: 18px;
+    }
+
+}
+
+.how-its-made {
+    background-color: var(--lightgray);
+}
+
+.chocolate {
+    color: #111;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 133.333% */
+
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+        font-size: 18px;
+    }
+}
+
+.box-choco {
+    background-color: white;
+    display: flex;
+    width: 516px;
+    height: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    padding: 32px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 614px;
+            height: 356px;
+            gap: 18px;
+    }
+
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+        width: 335px;
+        height: 456px;
+        padding: 20px 14px;
+        gap: 20px;
+    }
+
+
+}
+
+.boxchoco-item {
+    display: flex;
+}
+
+:root {
+    --charcoal: #111;
+    --blackcurrant: #1E1823;
+    --orangepeel: #FD9222;
+    --lightgray: #FAFAFA;
+}
+
+.media-grp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+

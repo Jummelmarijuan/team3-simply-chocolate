@@ -86,8 +86,7 @@ body {
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
-    line-height: 34px;
-    /* 121.429% */
+    line-height: 34px; /* 121.429% */
     letter-spacing: -0.56px;
 }
 
@@ -102,7 +101,8 @@ body {
 .footer-contact-list,
 .footer-anchor-links,
 .footer,
-.footer-icons {
+.footer-icons,
+.container {
     display: flex;
 }
 
@@ -113,8 +113,7 @@ body {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 18px;
-    /* 128.571% */
+    line-height: 18px; /* 128.571% */
     gap: 14px;
 }
 
@@ -142,8 +141,7 @@ body {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 16px;
-    /* 114.286% */
+    line-height: 16px; /* 114.286% */
     letter-spacing: -0.28px;
     padding-top: 24px;
     padding-bottom: 50px;
@@ -192,6 +190,7 @@ body {
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
+        flex-direction: column;
     }
 
     .footer-top {
@@ -211,11 +210,11 @@ body {
     }
 }
 
-
 @media screen and (min-width: 1200px) {
 
     .container {
         width: 1200px;
+        flex-direction: column;
     }
 
     .footer-top {
@@ -236,6 +235,7 @@ body {
         width: auto;
         height: auto;
         margin: 0 auto;
+        flex-direction: column;
     }
 
     .subscribe-grp {
