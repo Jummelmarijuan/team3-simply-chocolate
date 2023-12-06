@@ -1,3 +1,23 @@
 @import './common';
-@import './modal.scss';
+@import './subs-modal.scss';
+@import './subscribe-footer';
+// @import './advantage';
+// @import './header-hero';
+// @import './how-its-made';
+// @import './our-products';
+// @import './reviews';
+// @import './top-sellers';
+// @import './unique-components';
+// @import './icon-demo';
+// @import './modal.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap');
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
