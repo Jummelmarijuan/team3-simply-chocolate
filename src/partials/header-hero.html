@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>header-hero</title>
-
-  </head>
-  <body>
-    <header class="header">
+<!-- Header -->
+    <header id="home" class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="header-logo" href=""
-            ><span class="logo-accent">SIMPLY</span>CHOCOLATE<svg class="header-logo_mobile-tab" width="21" height="21">
-                <use href=""></use>
-            </svg>
-            <svg class="header-logo-desktop" width="24" height="24">
-                <use href=""></use>
-            </svg>
-          </a>
+            ><span class="logo-accent">SIMPLY</span>CHOCOLATE
+              <svg width="32" height="22" class="icon">
+        <use href="/src/images/sprite.svg#icon-choco-logo"></use>
+        <!-- <span>icon-choco-logo</span> -->
+    </svg>
+        </a>
           <ul class="header-list-nav">
             <li class="header-item-nav">
                 <a class="header-link-nav" href="">Home</a>
@@ -35,36 +26,135 @@
                 <a class="header-link-nav" href="">Chocolate is loved</a>
             </li>
           </ul>
-          <ul class="header-social">
-            <li class="header-item-social">
-                <a class="header-link-social" href="https://twitter.com/" rel="noopener noreferrer"></a>
+          <ul class="header-list-social">
+            <li class="header-social-item">
+                <a class="header-social-icon" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                    <svg width="32" height="22" class="icon">
+        <use href="/src/images/sprite.svg#icon-twitter"></use>
+      </svg>
+    </a>
             </li>
-            <li class="header-item-social">
-                <a class="header-link-social" href="https://instagram.com/" rel="noopener noreferrer"><svg class="header-soc-icon" width="24" height="24">
-              <use
-                href=""></use></svg></a>
+            <li class="header-social-item">
+                <a class="header-social-icon" href="https://instagram.com/">
+                   <svg width="32" height="22" class="icon">
+        <use href="/src/images/sprite.svg#icon-instagram"></use>
+        <!-- <span>icon-instagram</span> -->
+    </svg>
+    </a>
             </li>
           </ul>
         </nav>
-        <button class="button-menu" type="button"></button>
+        <button class="button-menu" type="button" data-menu-open>
+          <svg width="28" height="28" class="icon">
+        <use href="/src/images/sprite.svg#icon-hamburger"></use>
+        <!-- <span>icon-hamburger</span> -->
+    </svg>
+          <svg width="32" height="32" class="icon">
+        <use href="/src/images/sprite.svg#icon-hamburger"></use>
+        <!-- <span>icon-hamburger</span> -->
+    </svg>
+    </button>
       </div>
-    </header>
-    <section class="hero">
-        <div class="hero-container container">
-            <h1 class=""visually-hidden">Hero</h1>
-            <h2 class="hero-title title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
-            </h2>
-            <div class="hero_tablet-btn-scroll">
+    
+    <!-- Mobile Menu -->
+  <div class="mob-menu is-hidden" data-menu>
+    <div class="menu-container">
+      <div>
+        <button class="button-menu-close" type="button" data-menu-close>
+             <svg width="28" height="28" class="icon">
+        <use href="/src/images/sprite.svg#icon-hamburger"></use>
+        <!-- <span>icon-hamburger</span> -->
+    </svg>
+    <button class="button-menu-close" type="button" data-menu-close>
+             <svg width="32" height="32" class="icon">
+        <use href="/src/images/sprite.svg#icon-hamburger"></use>
+        </svg>
+        </button>
+         <ul class="menu-nav-list">
+          <li class="menu-nav-item">
+            <a
+              class="menu-nav-link"
+              href=""
+              >Home</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="">How it's made?</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="">Our products</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="">Top sellers</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="">Chocolate is loved</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="menu-social-list">
+          <li class="menu-social-item">
+            <a
+              class="menu-social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >    <svg width="32" height="22" class="icon">
+        <use href="/src/images/sprite.svg#icon-instagram"></use>
+        <!-- <span>icon-instagram</span> -->
+    </svg>
+          </li>
+          <li class="menu-social-item">
+            <a
+              class="menu-social-link"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >    <svg width="32" height="22" class="icon">
+        <use href="/src/images/sprite.svg#icon-twitter"></use>
+        <!-- <span>icon-twitter</span> -->
+    </svg>
+              </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+        <!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="visually-hidden">Hero</h1>
+        <h2 class="hero-title title">
+          Treat yourself or a loved one to<br> our finest ingredients for a moment<br>
+          of pure delight!
+        </h2>
+        <div class="hero_tablet-btn-scroll">
           <div class="hero_button-wrap">
             <button
               class="hero_btn-1 button button_accent">
               Buy now
             </button>
-            <a href="#how-its-made.html" class="button hero_btn-2">
+            <a href="" class="button hero_btn-2">
               How it's made
             </a>
           </div>
+          <div class="hero_scroll-wrap">
+            <a href="" class="hero_scroll-title"
+              >scroll down
+              <div class="hero_scroll-link">
+                <svg class="hero_scroll-item" width="16px" height="16px">
+                  <use
+                    href="/src/images/sprite.svg#icon-scroll-down"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
         </div>
-    </section>
-  </body>
-</html>
+      </div>
+    </div>
+  </div>
+</section>
