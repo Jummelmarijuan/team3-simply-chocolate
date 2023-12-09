@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --charcoal: #111;
+    --blackcurrant: #1E1823;
+    --orangepeel: #FD9222;
+    --lightgray: #FAFAFA;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0
+}
+
+.container {
+    width: 335px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        width: 704px;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1136px;
+        margin: 0 auto;
+    }
+}
+
+// added
+.section {
+    padding-top: 72px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 100px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 128px;
+    }
+}
+// end of added
+
+
+.uc-head {
+    text-align: center;
+}
+
+.h2-orange {
+    color: var(--orangepeel);
+}
+
+.uc-h2 {
+    font-size: 24px;
+    // padding-bottom: 28px;
+    // addded
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+
+// added
+    @media screen and (min-width: 768px) {
+        margin-bottom: 28px;
+        width: 411px;
+        line-height: 1.16;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 28px;
+        width: 411px;
+        line-height: 1.16;
+    }
+}
+
+.uc-description {
+    font-size: 14px;
+    // change to margin-bottom
+    margin-bottom: 32px;
+
+    // added
+    margin: 0 auto;
+    padding-bottom: 32px;
+    line-height: 1.28;
+    text-align: center;
+    letter-spacing: -.02em;
+    color: var(--blackcurrant);
+    width: 335px;
+
+    // added media queries
+    @media screen and (min-width: 768px) {
+        width: 486px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 486px;
+    }
+}
+
+.uc-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; //19px to 20px
+
+    // @media screen and (max-width: 767px) {
+    //     padding: 40px;
+    // }
+
+    @media screen and (min-width: 768px) {
+        gap: 30px;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 19px;
+        flex-wrap: nowrap;
+    }
+}
+
+.uc-cards-img {
+    padding: 28px 36px 28px 28px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 335px;
+    margin: 0 auto;
+    // added code
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    // align-items: center;
+
+    @media screen and (min-width: 768px) {
+        width: 336px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+}
+
+.uc-cards:hover .uc-hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.uc-hover {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.25s ease-in-out;
+    padding: 20px;
+}
+
+.img-card {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    // added
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 171px;
+        }
+
+    @media screen and (min-width: 1200px) {
+        width: 206px;
+        height: 160px;
+    }
+}
+
+.caption {
+    font-size: 14px;
+    padding-top: 36px;
+}
+
+.orange-border {
+    border-radius: 15px;
+    background: var(--orangepeel)
+}
+
+.black-border {
+    border-radius: 15px;
+    background-color: var(--blackcurrant);
+}
+.white-background {
+    border: 1px solid var(--orangepeel);
+    border-radius: 15px;
+}
+
+.white-background:hover {
+    border: none;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+.black {
+    color: #111111;
+}
+
+.uc-h3-hover {
+    font-size: 18px;
+    color: #111;
+    padding-bottom: 8px;
+}
+
+.uc-hover-button {
+    border-radius: 35px;
+    background: var(--lightgray);
+    border: 1px solid var(--orangepeel);
+    text-align: center;
+    font-size: 10px;
+    padding: 6px 16px;
+}
+
+.selected {
+    background-color: var(--orangepeel);
+}
+
+
+.uc-h3-details {
+    font-size: 14px;
+    padding-top: 14px;
+}
