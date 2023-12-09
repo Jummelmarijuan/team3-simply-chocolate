@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector("#phone");window.intlTelInput(e,{separateDialCode:!0,utilsScript:"https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js"});new Swiper(".mySwiper",{slidesPerView:3,spaceBetween:30,centeredSlides:!1,loop:!0,autoplay:{delay:1500,disableOnInteraction:!1},pagination:{el:".swiper-pagination",clickable:!0},navigation:{},breakpoints:{375:{slidesPerView:1,spaceBetween:10},768:{slidesPerView:2,spaceBetween:16},1200:{slidesPerView:3,spaceBetween:28}}})}();
+//# sourceMappingURL=index.55d05136.js.map
