@@ -1,0 +1,189 @@
+h2 {
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.reviews-caption {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+}
+
+.reviews-choco {
+    color: var(--orangepeel);
+    font-family: "Montserrat";
+}
+
+// .slide-container {
+//     display: flex;
+//     gap: 28px;
+//     padding-top: 50px;
+//     position: relative;
+
+// }
+
+.slide-content {
+    /* margin: 0 40px; */
+    height: 240px;
+    width: 368px;
+    /* background-color: #FD9222; */
+    padding-top: 40px;
+
+}
+.card {
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FFF;
+    box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
+    width: 335px;
+    height: 200px;
+
+    @media screen and (min-width: 768px) {
+        width: 344px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 360px;
+    }
+   
+}
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10px 14px; */
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.card-content {
+    gap: 24px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.card-image {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    /* background-color: #FAFAFA; */
+    margin-top: -40px;
+
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.name {
+    color: #111;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.description {
+    color: rgba(17, 17, 17, 0.70);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    margin-top: -55px;
+    margin-left: -10px;
+    margin-right: -10px;
+      
+}
+.review-btn {
+    margin: auto;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 1px solid var(--orangepeel);
+    padding: 12px 28px;
+    background-color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+
+        @media screen and (min-width: 768px) {
+            padding: 14px 40px;
+            font-size: 18px;
+            margin-top: 50px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 14px 40px;
+            font-size: 18px;
+            margin-top: 50px;
+        }
+
+
+}
+.review-btn:hover, .review-btn:focus {
+    background-color: var(--orangepeel);
+    color: var(--lightgray);
+}
+
+// Slider style
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    // background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    color: rgba(17, 17, 17, 0.10);
+    width: 13px;
+    height: 13px;
+    
+    }
+
+.swiper-pagination-bullet-active {
+    background: #FD9222;
+    width: 28px;
+    height: 13px;
+    border-radius: 13px;
+}
+
+.swiper-wrapper {
+    padding-bottom: 5px;
+    margin-top: 50px;
+}
+// .swiper-pagination-bullet:only-child {
+//     visibility: hidden;
+// }
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0px !important;
+}
+
