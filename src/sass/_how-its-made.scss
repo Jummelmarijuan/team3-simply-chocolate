@@ -57,11 +57,10 @@
 .orange-text>h1 {
     color: #111;
     text-align: center;
-    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 28px;/* 116.667% */
+    line-height: 28px;
     letter-spacing: -0.72px;
     text-transform: uppercase;
 
@@ -82,7 +81,6 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-        /* 128.571% */
     letter-spacing: -0.28px;
     padding-left: 20px;
     display: flex;
@@ -107,10 +105,8 @@
     color: #111;
     font-family: Montserrat;
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
     line-height: 24px;
-    /* 133.333% */
 
     @media screen and (min-width: 375px) and (max-width: 767px) {
         font-size: 18px;
@@ -130,9 +126,9 @@
     padding: 32px;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-            width: 614px;
-            height: 356px;
-            gap: 18px;
+        width: 614px;
+        height: 356px;
+        gap: 18px;
     }
 
     @media screen and (min-width: 375px) and (max-width: 767px) {
@@ -165,3 +161,6 @@
 
 
 
+iframe {
+    border-radius: 15px;
+}
