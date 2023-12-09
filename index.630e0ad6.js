@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector("#phone");window.intlTelInput(e,{separateDialCode:!0,utilsScript:"https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js"}),function(){var e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function t(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",t),e.closeModalBtn.addEventListener("click",t)}()}();
-//# sourceMappingURL=index.630e0ad6.js.map
