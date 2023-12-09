@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --charcoal: #111;
+    --blackcurrant: #1E1823;
+    --orangepeel: #FD9222;
+    --lightgray: #FAFAFA;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 335px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        width: 704px;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1136px;
+        margin: 0 auto;
+    }
+}
+
+.advantage-section {
+    background-color: var(--blackcurrant);
+    padding: 20px;
+    width: 100%;
+   
+    @media screen and (min-width: 768px) {
+        padding: 50px 32px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        padding: 50px;
+    }
+    
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.advantage-sec-list {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: column;
+    gap: 22px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width:768px) {
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    @media screen and (min-width:1200px) {
+        justify-content: center;
+        flex-direction: row;
+        gap: 70px;
+    }
+
+
+}
+
+.advantage-sec-list {
+    list-style: none;
+}
+
+.adv-icon {
+    border: 1px solid #FFFFFF80;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 62px;
+    height: 62px;
+}
+
+.adv-sec-head {
+    color: var(--lightgray);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 22px;
+    margin-bottom: 18px;
+}
+
+.adv-sec-description {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    flex-shrink: 0;
+}
+
+.adv-sec-list-item {
+    position: relative;
+    // height: 244px;
+    width: 308px;
+    margin-right: 28px;
+    row-gap: 32px;
+    // display: none;
+}
+
+.adv-sec-list-item:not(:last-child)::after {
+    display: none;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+
+    @media screen and (min-width:1200px) {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 60px;
+        right: -18px;
+        height: 124px;
+        background-color: rgba(255, 255, 255, 0.50);
+        width: 1px;
+    }
+}
