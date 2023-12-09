@@ -1,31 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --charcoal: #111111;
-  --blackcurrant: #1e1823;
-  --orangepeel: #fd9222;
-  --lightgray: #fafa;
-  --lightcolor: #fff;
-}
-
-body {
-  font-family: 'Montseratt', sans-serif;
-  color: var(--charcoal);
-  background-color: var(--lightcolor);
-  font-size: 14px;
-  letter-spacing: -0.028em;
-}
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-
 .body-wrap {
   overflow: hidden;
   width: 100%;
