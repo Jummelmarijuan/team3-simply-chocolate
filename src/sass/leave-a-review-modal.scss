@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --charcoal: #111;
+    --blackcurrant: #1E1823;
+    --orangepeel: #FD9222;
+    --lightgray: #FAFAFA;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.leave-a-review-modal {
+    max-width: 311px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    background-color: var(--lightgray);
+    padding: 32px 24px;
+    transition: transform .25s cubic-bezier(.4, 0, .2, 1);
+    border-radius: 15px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 517px;
+        padding: 40px;
+    }
+}   
+
+.close-btn {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 14px;
+    right: 14px;
+}
+
+.icon-close {
+    @media screen and (min-width: 768px) {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.close-btn:hover {
+    fill: var(--orangepeel);
+}
+
+// int tel styles
+
+.iti__country-list {
+    width: 245px;
+    overflow-x: hidden;
+}
+
+.iti__country-list {
+    padding: 5px;
+}
+
+.iti__country {
+    font-size: 14px;
+    width: 300px;
+}
+
+.iti__country-name {
+    flex-wrap: wrap;
+}
+
+.tel-no {
+    padding-left: 138px;
+}
+
+.iti {
+    width: 100%;
+    margin-bottom: 18px;
+    // margin-top: 8px;
+}
+
+.iti__selected-flag {
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+    background-color: #fddab2;
+}
+
+.iti--separate-dial-code .iti__selected-flag:hover {
+    background-color: #fddab2;
+}
+
+// end of int tel
+
+.subscribe-btn {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 14px;
+    right: 14px;
+}
+
+.icon-close {
+    @media screen and (min-width: 768px) {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.orange-text {
+    color: #FD9222;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+    }
+}
+
+.text-now {
+    color: #111;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    // width: 255px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+    }
+}
+
+// Personal Info
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 32px;
+    
+    @media screen and (min-width: 768px) {
+        margin-top: 40px;
+    }
+}
+
+.personal-info-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 21px;
+    }
+}
+
+.userspan {
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: -0.24px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+input::placeholder {
+    color: rgba(64, 64, 64, 0.30);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+.review-input {
+    padding: 14px 18px;
+    border-radius: 13px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+    outline: 0;
+    margin-bottom: 14px;
+
+    @media screen and (min-width: 768px) {
+        padding: 22px 24px;
+        margin-bottom: 18px;
+    }
+}
+
+.review-input:hover, 
+.review-input:focus {
+    border-color: var(--orangepeel);
+}
+
+.email-info {
+    margin-top: 18px;
+}
+
+.block-span {
+    display: block;
+    position: relative;
+    // margin-bottom: 18px;
+}
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.icon-mastercard {
+    position: absolute;
+    top: 54%;
+    left: 82%;
+    transform: translateY(-50%);
+}
+
+.usercomment{
+    display: block;
+    width: 100%;
+    padding: 14px 18px 60px 18px;
+    border-radius: 13px;
+    margin-bottom: 18px;
+    resize: none;
+    outline: none;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.28px;
+
+    @media screen and (min-width: 768px) {
+        padding: 22px 24px 93px;
+    }
+}
+
+textarea:hover,
+textarea:focus {
+    border-color: var(--orangepeel);
+}
+
+textarea::placeholder {
+    color: rgba(64, 64, 64, 0.30);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+button {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.order-btn {
+    display: block;
+    background: var(--orangepeel);
+    margin-right: auto;
+    border: none;
+    font-size: 14px;
+    border-radius: 100px;
+    padding: 12px 28px;
+    cursor: pointer;
+    transition: color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1), transform .25s cubic-bezier(.4, 0, .2, 1);
+
+    @media screen and (min-width: 768px) {
+        padding: 14px 40px;
+    }
+}
+
+.order-btn:hover,
+.order-btn:active {
+    color: var(--orangepeel);
+    background-color: #FCF1E0;
+    opacity: 1.0;
+}
