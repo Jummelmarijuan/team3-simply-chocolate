@@ -1,21 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .img-txt {
     display: flex;
     column-gap: 52px;
     align-items: center;
-}
-
-.container {
-    display: flex;
-    /* Add this line to make justify-content work */
-    justify-content: center;
-    margin: auto;
-    height: auto;
 }
 
 .howitsmade-grp {
@@ -46,7 +32,6 @@
         width: 614px;
         height: 400px;
     }
-
 }
 
 .iframe {
