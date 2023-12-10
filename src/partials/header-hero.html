@@ -1,69 +1,153 @@
 <!-- Header -->
-    <header id="home" class="header">
-      <div class="container header-container">
-        <nav class="header-nav">
-          <a class="header-logo" href=""
-            ><span class="logo-accent">SIMPLY</span>CHOCOLATE
-              <svg width="32" height="22" class="icon">
-        <use href="/src/images/sprite.svg#icon-choco-logo"></use>
-        <!-- <span>icon-choco-logo</span> -->
-    </svg>
-        </a>
-          <ul class="header-list-nav">
-            <li class="header-item-nav">
-                <a class="header-link-nav" href="">Home</a>
-            </li>
-            <li class="header-item-nav">
-                <a class="header-link-nav" href="">How it's made?</a>
-            </li>
-            <li class="header-item-nav">
-                <a class="header-link-nav" href="">Our Products</a>
-            </li>
-            <li class="header-item-nav">
-                <a class="header-link-nav" href="">Top sellers</a>
-            </li>
-            <li class="header-item-nav">
-                <a class="header-link-nav" href="">Chocolate is loved</a>
-            </li>
-          </ul>
+    <header class="header">
+      <div class="header-container">
+        <nav class="header-navigation">
+          <div class="logo-container">
+          <a class="header-logo" href="index.html"><span class="font-italic">SIMPLY&nbsp;</span>CHOCOLATE
+            <svg width="24" height="24" class="logo-icon">
+                <use href="/src/images/sprite.svg#icon-choco-logo"></use>
+            </svg></a>
+          </div>
+
+            <ul class="header-list">
+                  <li class="header-item">
+                      <a class="header-link" href="">Home</a>
+                  </li>
+                  <li class="header-item">
+                      <a class="header-link" href="">How it's made?</a>
+                  </li>
+                  <li class="header-item">
+                      <a class="header-link" href="">Our Products</a>
+                  </li>
+                  <li class="header-item">
+                      <a class="header-link" href="">Top sellers</a>
+                  </li>
+                  <li class="header-item">
+                      <a class="header-link" href="">Chocolate is loved</a>
+                  </li>
+              </ul>
+        
           <ul class="header-list-social">
             <li class="header-social-item">
-                <a class="header-social-icon" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                    <svg width="32" height="22" class="icon">
-        <use href="/src/images/sprite.svg#icon-twitter"></use>
-      </svg>
-    </a>
+                <a class="header-social-link" href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <svg width="24" height="24" class="icon">
+                       <use href="/src/images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
             </li>
+
             <li class="header-social-item">
-                <a class="header-social-icon" href="https://instagram.com/">
-                   <svg width="32" height="22" class="icon">
-        <use href="/src/images/sprite.svg#icon-instagram"></use>
-        <!-- <span>icon-instagram</span> -->
-    </svg>
-    </a>
+              <a class="header-social-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" class="icon">
+                  <use href="/src/images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </nav>
-        <button class="button-menu" type="button" data-menu-open>
+          
+          <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mob-menu">
+            <svg width="28" height="28" class="menu-btn-icon">
+              <use href="/src/images/sprite.svg#icon-hamburger"></use>
+            </svg>
+          </button>
+        </div>
+
+
+        <!-- mobile header -->
+
+  </header>
+
+          <div type="button" class="mobile-menu js-menu-container" id="mob-menu">
+            <div class="header-container mobile-menu-container">
+            <button class="mob-menu-close js-close-menu" type="button">
+              <svg width="28" height="28" class="mob-nav-close">
+                <use href="/src/images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          
+            <ul class="mob-nav-menu">
+              <li class="mob-nav-menu-item"><a class="mob-nav-menu-link mob-menu-active" href="#">Home</a></li>
+              <li class="mob-nav-menu-item"><a class="mob-nav-menu-link" href="#">How it’s made?</a></li>
+              <li class="mob-nav-menu-item"><a class="mob-nav-menu-link" href="#">Our products</a></li>
+              <li class="mob-nav-menu-item"><a class="mob-nav-menu-link" href="#">Top sellers</a></li>
+              <li class="mob-nav-menu-item"><a class="mob-nav-menu-link" href="#">Chocolate is loved</a></li>
+            </ul>
+          <div class="mobile-social-media-container">
+            <ul class="mobile-social-media-list list">
+              <li class="mobile-social-media-item">
+                <a class="mobile-social-media-link" href="https://www.instagram.com/" target="_blank" rel="noopener, noreferrer">
+                  <svg aria-label="instagram" class="mobile-social-media-icon" width="20" height="20">
+                    <use href="/src/images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-social-media-item">
+                <a class="mobile-social-media-link" href="https://www.twitter.com/" target="_blank" rel="noopener, noreferrer">
+                  <svg aria-label="twitter" class="mobile-social-media-icon" width="20" height="20">
+                    <use href="/src/images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          </div>
+          </div>
+
+          <!-- HERO -->
+          <section class="section-hero">
+            <h1 hidden>Chocolate delight</h1>
+            <div class="container container-hero">
+              <div class="container-bg-hero">
+                <div class="wrap">
+                  <h2 class="title-hero">
+                    Treat yourself or a loved one to our finest ingredients for a moment
+                    of pure delight!
+                  </h2>
+                  <ul class="btn-list-hero">
+                    <li>
+                      <button type="button" class="btn-hero btn-hero-first js-open-modal">
+                        Buy now
+                      </button>
+                    </li>
+                    <li>
+                      <a href="#how-its-made" class="btn-hero btn-hero-second">
+                        How it’s made
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#footer" class="link-scroll">
+                  scroll down
+                  <span class="scroll-decor">
+                    <svg class="svg-check">
+                      <use href="/src/images/sprite.svg#icon-scroll-down""></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </section>
+
+
+
+  <!-- <button class="button-menu" type="button" data-menu-open>
           <svg width="28" height="28" class="icon">
         <use href="/src/images/sprite.svg#icon-hamburger"></use>
-        <!-- <span>icon-hamburger</span> -->
     </svg>
           <svg width="32" height="32" class="icon">
         <use href="/src/images/sprite.svg#icon-hamburger"></use>
-        <!-- <span>icon-hamburger</span> -->
     </svg>
     </button>
-      </div>
+      </div> -->
     
     <!-- Mobile Menu -->
-  <div class="mob-menu is-hidden" data-menu>
+  <!-- <div class="mob-menu is-hidden" data-menu>
     <div class="menu-container">
       <div>
         <button class="button-menu-close" type="button" data-menu-close>
              <svg width="28" height="28" class="icon">
         <use href="/src/images/sprite.svg#icon-hamburger"></use>
-        <!-- <span>icon-hamburger</span> -->
     </svg>
     <button class="button-menu-close" type="button" data-menu-close>
              <svg width="32" height="32" class="icon">
@@ -101,7 +185,6 @@
               rel="noopener noreferrer"
               >    <svg width="32" height="22" class="icon">
         <use href="/src/images/sprite.svg#icon-instagram"></use>
-        <!-- <span>icon-instagram</span> -->
     </svg>
           </li>
           <li class="menu-social-item">
@@ -112,18 +195,17 @@
               rel="noopener noreferrer"
               >    <svg width="32" height="22" class="icon">
         <use href="/src/images/sprite.svg#icon-twitter"></use>
-        <!-- <span>icon-twitter</span> -->
     </svg>
               </a>
           </li>
         </ul>
       </div>
     </div>
-  </div>
-</header>
+  </div> -->
+<!-- </header> -->
 
         <!-- HERO -->
-<section class="hero">
+<!-- <section class="hero">
   <div class="container">
     <div class="hero-container">
       <div class="hero-content">
@@ -157,4 +239,4 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->

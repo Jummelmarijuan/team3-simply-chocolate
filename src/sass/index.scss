@@ -3,8 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap');
 
 .container {
+  // background: rgb(164, 225, 255);
   width: 335px;
   margin: 0 auto;
+  
   @media screen and (min-width: 768px) {
     width: 704px;
     margin: 0 auto;
@@ -14,6 +16,7 @@
     margin: 0 auto;
   }
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -26,14 +29,6 @@
     --orangepeel: #fd9222;
     --lightgray: #fafa;
     --lightcolor: #fff;
-}
-
-body {
-    font-family: 'Montseratt', sans-serif;
-    color: var(--charcoal);
-    background-color: var(--lightcolor);
-    font-size: 14px;
-    letter-spacing: -0.028em;
 }
 
 ul {
