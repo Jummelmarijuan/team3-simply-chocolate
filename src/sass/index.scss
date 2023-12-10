@@ -1,8 +1,12 @@
 @import './common';
-@import './subscribe-footer';
-@import './leave-a-review-modal.scss';
+@import './advantage';
 @import './unique-components';
+@import './how-its-made';
+@import './our-products';
 @import './top-sellers';
 @import './reviews';
-@import './how-its-made';
-@import './advantage'
+@import './subscribe-footer';
+// modals
+@import './leave-a-review-modal.scss';
+@import './buy-now-modal.scss';
+@import './subs-modal.scss';

@@ -1,16 +1,12 @@
-.advantage-section {
+.adv-section {
     background-color: var(--blackcurrant);
-    padding: 20px;
-    margin: 0 auto;
-   
-    @media screen and (min-width: 768px) {
-        padding: 50px 32px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width:768px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
-    
-    @media screen and (min-width: 1200px) {
-        padding: 50px;
-    }
-    
 }
 
 .visually-hidden {
@@ -27,15 +23,15 @@
     align-content: center;
 
     @media screen and (min-width:768px) {
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: row;
-        gap: 32px;
+        column-gap: 60px;
+        row-gap: 32px;
     }
 
     @media screen and (min-width:1200px) {
-        justify-content: center;
-        flex-direction: row;
-        gap: 70px;
+        justify-content: space-between;
+        gap: 88px;
     }
 }
 
@@ -72,11 +68,8 @@
 
 .adv-sec-list-item {
     position: relative;
-    // height: 244px;
     width: 308px;
-    // margin-right: 28px;
     row-gap: 32px;
-    // display: none;
 }
 
 .adv-sec-list-item:not(:last-child)::after {

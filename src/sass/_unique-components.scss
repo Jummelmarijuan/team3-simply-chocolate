@@ -1,38 +1,10 @@
-.uc-head {
-    text-align: center;
-}
-
-.h2-orange {
-    color: var(--orangepeel);
-}
-
-.uc-h2 {
-    font-size: 24px;
-    // padding-bottom: 28px;
-    // addded
-    margin-left: auto;
-    margin-right: auto;
+.diff-margin {
     margin-bottom: 28px;
-
-// added
-    @media screen and (min-width: 768px) {
-        margin-bottom: 28px;
-        width: 411px;
-        line-height: 1.16;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 28px;
-        width: 411px;
-        line-height: 1.16;
-    }
 }
 
 .uc-description {
     font-size: 14px;
     // change to margin-bottom
-    margin-bottom: 32px;
-
     // added
     margin: 0 auto;
     padding-bottom: 32px;
@@ -45,6 +17,7 @@
     // added media queries
     @media screen and (min-width: 768px) {
         width: 486px;
+        padding-bottom: 50px;
     }
     
     @media screen and (min-width: 1200px) {
@@ -75,12 +48,13 @@
 }
 
 .uc-cards-img {
-    padding: 28px 36px 28px 28px;
+    padding: 28px;
     position: relative;
     overflow: hidden;
     height: 100%;
     width: 335px;
     margin: 0 auto;
+    
     // added code
     // display: flex;
     // justify-content: center;
@@ -110,8 +84,9 @@
     left: 0;
     opacity: 0;
     transform: translateY(100%);
-    transition: transform 0.25s ease-in-out;
+    transition: transform 0.50s ease-in-out;
     padding: 20px;
+    border-radius: 13px;
 }
 
 .img-card {
@@ -123,7 +98,7 @@
     @media screen and (min-width: 768px) {
         width: 224px;
         height: 171px;
-        }
+    }
 
     @media screen and (min-width: 1200px) {
         width: 206px;
@@ -166,6 +141,7 @@
     font-size: 18px;
     color: #111;
     padding-bottom: 8px;
+    font-weight: 600;
 }
 
 .uc-hover-button {
@@ -175,6 +151,19 @@
     text-align: center;
     font-size: 10px;
     padding: 6px 16px;
+    color: #111;
+}
+
+.uc-hover-active {
+    color: #FFF;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 12px;
+    padding: 6px 16px;
+    border-radius: 35px;
+    background: var(--orangepeel);
+    border: 1px solid var(--orangepeel);
 }
 
 .selected {
@@ -183,6 +172,27 @@
 
 
 .uc-h3-details {
+    color: #111;
+    text-overflow: ellipsis;
+    white-space: wrap;
     font-size: 14px;
-    padding-top: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    width: 279px;
+    height: 146px;
+    margin-top: 14px;
+
+    @media screen and (min-width: 768px) {
+        width: 280px;
+        height: 146px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 230px;
+        height: 162px;
+        font-size: 12px;
+        margin-top: 8px;
+    }
 }
+

@@ -1,6 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400;1,500;1,600;1,700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -92,6 +93,7 @@ p {
 
 .section {
     margin-bottom: 72px;
+    overflow: hidden;
 
     @media screen and (min-width: 1200px) {
         margin-bottom: 100px;
@@ -99,5 +101,35 @@ p {
 
     @media screen and (min-width: 1200px) {
         margin-bottom: 128px;
+    }
+}
+
+.title {
+    color: #111;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+    }
+}
+
+.orange-text {
+    color: #FD9222;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    /* 116.667% */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
     }
 }

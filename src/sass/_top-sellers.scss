@@ -1,21 +1,3 @@
-// added
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.ts-h2 {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.16;
-}
-
-.orange {
-    color: var(--orangepeel);
-}
-
 .ts-block {
     display: flex;
     flex-wrap: wrap;
@@ -66,6 +48,13 @@ img {
 .ts-image {
     border-radius: 15px;
     margin-bottom: 20px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    box-shadow: 0px 3px 9px 5px rgba(0, 0, 0, 0.027);
+    
+    
     // added
     @media screen and (min-width: 767px) {
         width: 344px;
@@ -76,6 +65,11 @@ img {
         width: 368px;
         margin-bottom: 0px;
     }
+}
+
+.ts-image:hover{
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
 }
 
 .ts-bottom {
@@ -151,4 +145,3 @@ img {
         display: unset;
     }
 }
-
