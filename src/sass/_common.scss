@@ -8,6 +8,16 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth !important;
+
+    @media screen and (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+}
+
 :root {
     --charcoal: #111;
     --blackcurrant: #1E1823;
@@ -132,4 +142,8 @@ p {
     @media screen and (min-width: 768px) {
         font-size: 24px;
     }
+}
+
+a {
+    text-decoration: none;
 }
