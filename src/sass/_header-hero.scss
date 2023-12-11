@@ -1,6 +1,15 @@
 .header {
   padding-top: 20px;
   padding-bottom: 14px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 32px;
+  }
 }
 
 .header-container {
@@ -8,6 +17,15 @@
   padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 32px;
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 .logo-container {
@@ -69,10 +87,14 @@
 .menu-button {
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
 }
 
-//lets go!
+//max-width
 
 @media screen and (max-width: 1199px) {
   .header-list {
@@ -93,57 +115,33 @@
     background-color: transparent;
     border: none;
     padding: 0;
+    cursor: pointer;
   }
 }
 
+// separate
+
 @media screen and (min-width: 768px) {
-  .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  .header-container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-
   .menu-btn-icon {
-    width: 32px;
-    height: 32px;
-  }
-
-  .mob-nav-close {
     width: 32px;
     height: 32px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .header-container {
-    max-width: 1200px;
-  }
-
-  .header {
-    padding-bottom: 32px;
-  }
-
-  .header-navigation {
+.header-navigation {
     display: flex;
     align-items: center;
   }
 
-  .menu-button {
-    display: none;
-  }
-
-  .logo-text {
+.logo-text {
     margin-left: 7px;
   }
 
   .logo-text-link {
     font-size: 18px;
     line-height: 1.11;
-    color: var(--primary-text-color);
+    color: #111111;
   }
 
   .logo-icon {
@@ -161,11 +159,6 @@
     margin-left: 188px;
   }
 
-  // .icon {
-  //   stroke: #111;
-  //   fill: transparent;
-  // }
-
   .header-link {
     position: relative;
     font-weight: 500;
@@ -173,7 +166,7 @@
     line-height: 1.14px;
     letter-spacing: -0.02em;
     color: #1E1823;
-    transition: color 250ms cubic-bezier(.17, .67, .54, .42);
+    transition: color 250ms cubic-bezier(.17, .67, .54, .42)
   }
 
   .header-link:hover,
@@ -197,12 +190,12 @@
     fill: #FD9222;
   }
 }
-  
 
 
 // mobile menu
 
 .mobile-menu {
+  cursor: pointer;
   position: fixed;
   width: 220px;
   height: 100%;
@@ -213,6 +206,10 @@
   opacity: 0.7;
   transform: translateX(100%);
   transition: 700ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+      width: 290px;
+  }
 }
 
 .mobile-menu.is-open {
@@ -241,15 +238,22 @@
   padding: 0;
   background-color: transparent;
   border: none;
+
+  
 }
 
 .mob-nav-close {
   fill: #FAFAFA;
+  cursor: pointer;
 }
 
 .mob-menu-close:hover .mob-nav-close,
 .mob-menu-close:focus .mob-nav-close {
   fill: #FD9222;
+  stroke: #FD9222;
+  width: 40px;
+  height: 40px;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .mob-nav-menu-link::after {
@@ -308,10 +312,6 @@ color: #FD9222;
 }
 
 @media screen and (min-width: 768px) {
-  .mobile-menu {
-    width: 290px;
-  }
-
   .header-container {
     padding: 0 32px;
   }
@@ -324,6 +324,14 @@ color: #FD9222;
   .mob-menu-close {
     top: 24px;
     right: 32px;
+  }
+
+.mob-menu-close:hover .mob-nav-close,
+.mob-menu-close:focus .mob-nav-close {
+    stroke: #FD9222;
+    width: 40px;
+    height: 40px;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .mob-nav-menu {
@@ -341,3 +349,154 @@ color: #FD9222;
 }
 
 // HERO SECTION
+
+.section-hero {
+  padding-bottom: 71px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 72px;
+  }
+}
+
+.bg-hero-wrapper {
+  padding-top: 395px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%),
+    url(/src/images/choco-hero-375-1x.jpg);
+  background-position: center;
+  background-color: #1E1823;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 30px;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(/src/images/choco-hero-768-1x.jpg);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 381px;
+    padding-bottom: 40px;
+    background-image: url(/src/images/choco-hero-1200-1x.jpg);
+  }
+
+}
+
+@media (min-device-ratio: 2) and (max-width: 767px),
+(min-resolution: 192dpi) and (max-width: 767px),
+(min-resolution: 2dppx) and (max-width: 767px) {
+
+  .bg-hero-wrapper {
+    background-image: linear-gradient(180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%),
+      url(/src/images/choco-hero-375-2x.jpg);
+  }
+}
+
+.title-hero {
+  text-align: start;
+  max-width: 280px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  color: #fff;
+
+  @media screen and (min-width: 768px) {
+    max-width: 484px;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.84px;
+  }
+}
+
+.btn-list-hero {
+  margin-top: 32px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+// .btn-hero {
+//     display: block;
+//     border-radius: 100px;
+//     padding: 12px 28px;
+//     font-weight: 600;
+//     font-size: 14px;
+//     line-height: 1.21;
+//     color: #f;
+//     
+// }
+
+.hero-btn-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  border: 1px solid #FFF;
+  text-decoration: none;
+}
+
+.hero-btn-2:hover,
+.hero-btn-2:focus {
+  color: #FD9222;
+  background-color: #FFF;
+  border: 1px solid #FD9222;
+}
+
+.link-scroll {
+  text-decoration: none;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  color: #fff;
+  letter-spacing: -0.03em;
+}
+
+.link-scroll:hover,
+.link-scroll:focus {
+  color: #FD9222;
+}
+
+.scroll-logo {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FD9222;
+  background-color: #FFF;
+  border-radius: 50%;
+}
+
+.link-scroll:hover .scroll-logo,
+.link-scroll:focus .scroll-logo {
+  background-color: #FD9222;
+  color: #fff;
+}
+
+.scroll-icon {
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+}
